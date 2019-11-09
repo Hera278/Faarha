@@ -16,7 +16,7 @@ module.exports = {
     run: async (client, message, args) => {
 
         const embed = new RichEmbed()
-            .setColor("RANDOM")
+          .setColor("#ffffff")
             client.once('ready', () => {
                 console.log('Ready!');
             });
