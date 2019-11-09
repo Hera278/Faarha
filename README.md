@@ -1,2 +1,2 @@
 # Faarha
-Bot 24/7.
+Discord Bot 24/7.
