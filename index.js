@@ -25,7 +25,7 @@ client.on("ready", () => {
     client.user.setPresence({
         status: "online",
         game: {
-            name: "Hera x Alice <3",
+            name: "Hera x Hilyah <3",
             type: "STREAMING"
         }
     }); 
