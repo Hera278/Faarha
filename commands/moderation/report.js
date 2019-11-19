@@ -2,9 +2,9 @@ const { RichEmbed } = require("discord.js");
 const { stripIndents } = require("common-tags");
 
 module.exports = {
-    name: "report",
+    name: "Warn",
     category: "moderation",
-    description: "Reports a member",
+    description: "Warn Member",
     usage: "<mention, id>",
     run: async (client, message, args) => {
         if (message.deletable) message.delete();
@@ -12,13 +12,13 @@ module.exports = {
         let rMember = message.mentions.members.first() || message.guild.members.get(args[0]);
 
         if (!rMember)
-            return message.reply("Couldn't find that person?").then(m => m.delete(5000));
+            return message.reply("Saya tidak bisa menemukan member tersebut.").then(m => m.delete(5000));
 
         if (rMember.hasPermission("BAN_MEMBERS") || rMember.user.bot)
-            return message.channel.send("Can't report that member").then(m => m.delete(5000));
+            return message.channel.send("Saya tidak bisa warn member tersebut.").then(m => m.delete(5000));
 
         if (!args[1])
-            return message.channel.send("Please provide a reason for the report").then(m => m.delete(5000));
+            return message.channel.send("Tolong tag member yang ingin diwarn.").then(m => m.delete(5000));
         
         const channel = message.guild.channels.find(c => c.name === "reports")
             
