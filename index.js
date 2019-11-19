@@ -25,7 +25,7 @@ client.on("ready", () => {
     client.user.setPresence({
         status: "online",
         game: {
-            name: "Hera x Hilyah <3",
+            name: "With Biji Kero",
             type: "STREAMING"
         }
     }); 
