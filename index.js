@@ -23,9 +23,9 @@ client.on("ready", () => {
     console.log(`Hi, ${client.user.username} is now online!`);
 
     client.user.setPresence({
-        status: "online",
+        status: "Do Not Disturb",
         game: {
-            name: "With Biji Kero",
+            name: "Hera x Hilyah <3",
             type: "STREAMING"
         }
     }); 
