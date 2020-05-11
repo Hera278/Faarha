@@ -25,7 +25,7 @@ client.on("ready", () => {
     client.user.setPresence({
         status: "Do Not Disturb",
         game: {
-            name: "Hera x Hilyah <3",
+            name: "Vermi Studio®",
             type: "STREAMING"
         }
     }); 
