@@ -23,10 +23,10 @@ client.on("ready", () => {
     console.log(`Hi, ${client.user.username} is now online!`);
 
     client.user.setPresence({
-        status: "Do Not Disturb",
+        status: "online",
         game: {
-            name: "Vermi Studio®",
-            type: "STREAMING"
+            name: "Touhou Project",
+            type: "WATCHING"
         }
     }); 
 });
