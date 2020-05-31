@@ -117,7 +117,7 @@ module.exports = {
                     return;
                 }
             
-                const dispatcher = serverQueue.connection.playStream(ytdl(song.url))
+                const dispatcher = serverQueue.connection.play(ytdl(song.url))
                     .on('end', () => {
                         console.log('Music ended!');
                         serverQueue.songs.shift();
